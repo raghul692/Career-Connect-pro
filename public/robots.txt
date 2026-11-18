@@ -1,0 +1,52 @@
+# Production robots.txt for Career Connect Pro
+# Compliant with RFC 9309 and search engine standards
+User-agent: *
+Allow: /
+Allow: /jobs
+Allow: /jobs/freshers
+Allow: /jobs/remote
+Allow: /jobs/internships
+Allow: /jobs/walk-in
+Allow: /companies
+Allow: /campus
+Allow: /campus/tests
+Allow: /campus/contests
+Allow: /campus/webinars
+Allow: /services
+Allow: /salaries
+Allow: /interview-prep
+Allow: /resume-builder
+Allow: /career-advice
+Allow: /features
+Allow: /product-tour
+Allow: /pricing
+Allow: /integrations
+Allow: /customers
+Allow: /careers
+Allow: /about
+Allow: /contact
+Allow: /contact-sales
+Allow: /faq
+Allow: /security
+Allow: /security/ssl
+Allow: /privacy
+Allow: /terms
+Allow: /fraud-alert
+Allow: /unsubscribe
+Allow: /changelog
+Allow: /status
+Allow: /sitemap
+
+# Disallow authenticated workspace, admin governance and system error fallback routes
+Disallow: /app/
+Disallow: /admin/
+Disallow: /billing/
+Disallow: /developer/
+Disallow: /super-admin/
+Disallow: /account/
+Disallow: /auth/
+Disallow: /403
+Disallow: /500
+Disallow: /429
+
+Sitemap: https://careerconnectpro.com/sitemap.xml
