@@ -54,7 +54,7 @@ export const Navbar: React.FC = () => {
   }
 
   return (
-    <header className="sticky top-0 z-50 bg-white/95 backdrop-blur-md border-b border-slate-200/90 shadow-2xs transition-all">
+    <header className="sticky top-0 z-50 bg-white/95 backdrop-blur-md border-b border-slate-200/90 shadow-2xs transition-all overflow-x-clip">
       {/* Global Broadcast Banner (if active) */}
       {broadcastMessage && broadcastMessage.active && (
         <div
@@ -406,7 +406,7 @@ export const Navbar: React.FC = () => {
             {/* For Employers CTA Button */}
             <Link
               to="/post-job"
-              className="inline-flex items-center gap-1.5 text-xs font-bold text-slate-700 hover:text-[#275df5] px-2.5 xl:px-3 py-1.5 rounded-xl border border-slate-200 hover:border-blue-300 transition-all bg-white hover:bg-blue-50/40 shadow-2xs shrink-0"
+              className="hidden xl:inline-flex items-center gap-1.5 text-xs font-bold text-slate-700 hover:text-[#275df5] px-2.5 xl:px-3 py-1.5 rounded-xl border border-slate-200 hover:border-blue-300 transition-all bg-white hover:bg-blue-50/40 shadow-2xs shrink-0"
             >
               <PlusCircle className="w-3.5 h-3.5 text-[#275df5]" />
               <span>For Employers</span>
@@ -542,18 +542,18 @@ export const Navbar: React.FC = () => {
           </div>
 
           {/* Mobile Right Controls: Search + Applied Pill + Menu Toggle */}
-          <div className="flex items-center gap-2 lg:hidden">
+          <div className="flex items-center gap-1.5 sm:gap-2 lg:hidden shrink-0">
             <button
               onClick={() => setIsCommandPaletteOpen(true)}
-              className="p-2 text-slate-600 hover:text-[#275df5] hover:bg-slate-100 rounded-lg transition-colors cursor-pointer"
+              className="p-1.5 sm:p-2 text-slate-600 hover:text-[#275df5] hover:bg-slate-100 rounded-lg transition-colors cursor-pointer"
               aria-label="Search"
             >
-              <Search className="w-4.5 h-4.5" />
+              <Search className="w-4 h-4 sm:w-4.5 sm:h-4.5" />
             </button>
 
             <Link
               to="/dashboard"
-              className="text-xs font-bold bg-blue-50 text-[#275df5] px-2.5 py-1.5 rounded-lg flex items-center gap-1 border border-blue-200/60"
+              className="hidden sm:flex text-xs font-bold bg-blue-50 text-[#275df5] px-2.5 py-1.5 rounded-lg items-center gap-1 border border-blue-200/60"
             >
               <span>Applied</span>
               <span className="bg-[#275df5] text-white rounded-full px-1.5 py-0.2 text-[10px] font-extrabold">
@@ -563,7 +563,7 @@ export const Navbar: React.FC = () => {
 
             <button
               onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-              className="p-2 rounded-xl text-slate-700 hover:bg-slate-100 transition-colors border border-slate-200/80 cursor-pointer"
+              className="p-1.5 sm:p-2 rounded-xl text-slate-700 hover:bg-slate-100 transition-colors border border-slate-200/80 cursor-pointer"
               aria-label="Toggle navigation drawer"
               aria-expanded={mobileMenuOpen}
             >

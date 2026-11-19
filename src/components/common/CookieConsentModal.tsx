@@ -30,7 +30,7 @@ export const CookieConsentModal: React.FC = () => {
   return (
     <>
       {/* Floating Bottom Banner */}
-      <div className="fixed bottom-4 left-4 z-40 max-w-md w-full bg-white rounded-2xl shadow-2xl border border-slate-200 p-5 space-y-4 animate-in fade-in slide-in-from-bottom-3">
+      <div className="fixed bottom-4 left-4 right-4 sm:right-auto z-40 max-w-md bg-white rounded-2xl shadow-2xl border border-slate-200 p-5 space-y-4 animate-in fade-in slide-in-from-bottom-3">
         <div className="flex items-start justify-between gap-3">
           <div className="flex items-center gap-2 text-slate-900 font-bold text-sm">
             <ShieldCheck className="w-5 h-5 text-indigo-600 shrink-0" />

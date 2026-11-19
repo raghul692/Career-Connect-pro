@@ -64,7 +64,7 @@ export const BrandLogo: React.FC<BrandLogoProps> = ({
         </div>
 
         {showTagline && (
-          <div className="flex items-center gap-1.5 mt-1 leading-none">
+          <div className="hidden sm:flex items-center gap-1.5 mt-1 leading-none">
             <span className="w-1.5 h-1.5 rounded-full bg-emerald-500 animate-pulse shrink-0" />
             <span
               className={`text-[9px] font-semibold tracking-wider uppercase truncate ${
