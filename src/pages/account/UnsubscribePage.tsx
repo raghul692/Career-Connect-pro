@@ -4,10 +4,8 @@ import {
   MailX,
   CheckCircle2,
   BellOff,
-  Bell,
   RotateCcw,
   ShieldCheck,
-  ChevronRight,
   Briefcase
 } from 'lucide-react'
 import { useJobContext } from '../../context/JobContext'

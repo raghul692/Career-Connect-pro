@@ -1,6 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-import { Layers, Sparkles, TrendingUp, AlertTriangle, ArrowRight, CheckCircle2, Zap } from 'lucide-react'
+import { Sparkles, AlertTriangle, CheckCircle2, Zap } from 'lucide-react'
 import { useJobContext } from '../../context/JobContext'
 
 export const UsageDashboardPage: React.FC = () => {

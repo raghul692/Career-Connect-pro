@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { Shield, Check, X, Info, Save, RotateCcw } from 'lucide-react'
+import { Check, X, Save } from 'lucide-react'
 import { useJobContext } from '../../context/JobContext'
 
 interface PermissionScope {

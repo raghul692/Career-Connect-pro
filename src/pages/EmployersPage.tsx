@@ -2,9 +2,6 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 import {
   Building2,
-  Users,
-  Search,
-  CheckCircle2,
   Zap,
   ArrowRight,
   ShieldCheck,

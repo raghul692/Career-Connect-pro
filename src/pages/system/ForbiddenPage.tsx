@@ -1,6 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-import { ShieldAlert, ArrowLeft, Home, HelpCircle } from 'lucide-react'
+import { ShieldAlert, Home } from 'lucide-react'
 
 export const ForbiddenPage: React.FC = () => {
   return (

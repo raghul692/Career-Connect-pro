@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { FileText, Download, CheckCircle2, Clock, Eye, X, Printer } from 'lucide-react'
+import { Download, Eye, X } from 'lucide-react'
 import { useJobContext } from '../../context/JobContext'
 import { Invoice } from '../../types'
 

@@ -16,7 +16,7 @@ import { useJobContext } from '../context/JobContext'
 export const ResumeBuilderPage: React.FC = () => {
   const { userProfile, updateProfile, showNotification } = useJobContext()
   const [analyzing, setAnalyzing] = useState(false)
-  const [analyzed, setAnalyzed] = useState(true)
+  const [_analyzed, setAnalyzed] = useState(true)
   const [resumeFile, setResumeFile] = useState<string>(userProfile.resumeName)
   const [atsScore, setAtsScore] = useState<number>(84)
 

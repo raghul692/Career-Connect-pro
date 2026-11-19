@@ -3,14 +3,10 @@ import { Link } from 'react-router-dom'
 import {
   Building2,
   Search,
-  ChevronRight,
-  Sparkles,
-  Users,
-  CheckCircle2
+  ChevronRight
 } from 'lucide-react'
 import { useJobContext } from '../context/JobContext'
 import { CompanyCard } from '../components/common/CompanyCard'
-import { CompanyType } from '../types'
 
 export const CompaniesPage: React.FC = () => {
   const { companies } = useJobContext()

@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import { Link, useNavigate } from 'react-router-dom'
-import { Mail, CheckCircle2, RefreshCw, ArrowRight, X } from 'lucide-react'
+import { Mail, RefreshCw, ArrowRight } from 'lucide-react'
 import { useJobContext } from '../../context/JobContext'
 
 export const VerifyEmailPage: React.FC = () => {

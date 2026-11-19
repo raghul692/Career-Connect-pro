@@ -1,19 +1,14 @@
 import React, { useState } from 'react'
 import {
-  Network,
   ShieldCheck,
   Plus,
-  Trash2,
-  CheckCircle2,
-  AlertTriangle,
-  Lock,
   Globe2,
   Server
 } from 'lucide-react'
 import { useJobContext } from '../../context/JobContext'
 
 export const IpAllowlistPage: React.FC = () => {
-  const { ipRules, addIpRule, toggleIpRule, showNotification } = useJobContext()
+  const { ipRules, addIpRule, toggleIpRule } = useJobContext()
   const [isModalOpen, setIsModalOpen] = useState(false)
   const [label, setLabel] = useState('')
   const [cidr, setCidr] = useState('')

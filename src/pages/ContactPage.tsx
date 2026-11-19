@@ -3,11 +3,9 @@ import { Link } from 'react-router-dom'
 import {
   Mail,
   Phone,
-  MapPin,
   Send,
   CheckCircle2,
   ChevronRight,
-  Clock,
   Building2
 } from 'lucide-react'
 import { useJobContext } from '../context/JobContext'
@@ -15,6 +13,7 @@ import { useJobContext } from '../context/JobContext'
 export const ContactPage: React.FC = () => {
   const { showNotification } = useJobContext()
   const [submitted, setSubmitted] = useState(false)
+  const [ticketId, setTicketId] = useState('84920')
   const [formData, setFormData] = useState({
     name: '',
     email: '',
@@ -26,6 +25,7 @@ export const ContactPage: React.FC = () => {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault()
+    setTicketId(String(Math.floor(Math.random() * 90000 + 10000)))
     setSubmitted(true)
     showNotification('Inquiry received! A support representative will respond within 24 hours.')
   }
@@ -63,7 +63,7 @@ export const ContactPage: React.FC = () => {
               <CheckCircle2 className="w-10 h-10 text-emerald-600 mx-auto" />
               <h3 className="text-base font-bold text-emerald-900">Message Delivered Successfully</h3>
               <p className="text-xs text-emerald-700 max-w-md mx-auto">
-                Ticket #CCP-{(Math.random() * 90000 + 10000).toFixed(0)} has been logged. Our priority response team will reach out to {formData.email}.
+                Ticket #CCP-{ticketId} has been logged. Our priority response team will reach out to {formData.email}.
               </p>
               <button
                 onClick={() => setSubmitted(false)}

@@ -1,5 +1,7 @@
 import React, { useState } from 'react'
-import { Key, Shield, CheckCircle2, Copy, Check, Upload, HelpCircle } from 'lucide-react'
+import {
+  CheckCircle2, Copy, Check
+} from 'lucide-react'
 import { useJobContext } from '../../context/JobContext'
 
 export const SsoDirectorySyncPage: React.FC = () => {

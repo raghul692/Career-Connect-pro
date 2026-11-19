@@ -4,11 +4,8 @@ import {
   HelpCircle,
   Search,
   ThumbsUp,
-  Building2,
   ChevronRight,
   ChevronDown,
-  Sparkles,
-  BookOpen,
   CheckCircle2
 } from 'lucide-react'
 import { useJobContext } from '../context/JobContext'

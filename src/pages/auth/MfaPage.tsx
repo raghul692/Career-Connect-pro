@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import { Link, useNavigate } from 'react-router-dom'
-import { ShieldCheck, Smartphone, Key, ArrowRight, CheckCircle2, Lock } from 'lucide-react'
+import { ShieldCheck, Lock } from 'lucide-react'
 import { useJobContext } from '../../context/JobContext'
 
 export const MfaPage: React.FC = () => {

@@ -1,6 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-import { ShieldCheck, Lock, Server, Key, ChevronRight, CheckCircle2 } from 'lucide-react'
+import { ShieldCheck, Lock, Server, Key, ChevronRight } from 'lucide-react'
 
 export const SecurityPage: React.FC = () => {
   return (

@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { Key, Plus, Trash2, Copy, Check, ShieldAlert, AlertTriangle, Eye, X } from 'lucide-react'
+import { Plus, Trash2, Copy, Check, ShieldAlert, X } from 'lucide-react'
 import { useJobContext } from '../../context/JobContext'
 import { ApiKey } from '../../types'
 
@@ -13,7 +13,7 @@ export const ApiKeysPage: React.FC = () => {
 
   const handleCreate = (e: React.FormEvent) => {
     e.preventDefault()
-    const newKey = generateApiKey(keyName, keyScope)
+    generateApiKey(keyName, keyScope)
     setCreatedKeySecret(`sk_live_${Math.random().toString(36).substring(2, 15)}${Math.random().toString(36).substring(2, 15)}`)
     setShowCreateModal(false)
     setKeyName('')

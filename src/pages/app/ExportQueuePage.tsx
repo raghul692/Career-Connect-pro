@@ -4,12 +4,8 @@ import {
   FileArchive,
   FileText,
   Clock,
-  CheckCircle2,
-  AlertCircle,
   Plus,
   RefreshCw,
-  ExternalLink,
-  Trash2,
   HardDrive
 } from 'lucide-react'
 import { useJobContext } from '../../context/JobContext'

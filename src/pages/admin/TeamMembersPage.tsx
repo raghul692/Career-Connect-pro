@@ -1,15 +1,11 @@
 import React, { useState } from 'react'
 import {
-  Users,
   UserPlus,
-  Mail,
-  Shield,
   Trash2,
   CheckCircle2,
   Clock,
   X,
-  Search,
-  Key
+  Search
 } from 'lucide-react'
 import { useJobContext } from '../../context/JobContext'
 import { EnterpriseRole } from '../../types'

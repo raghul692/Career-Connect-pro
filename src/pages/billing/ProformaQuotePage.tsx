@@ -1,15 +1,8 @@
 import React, { useState } from 'react'
 import {
   Receipt,
-  FileText,
-  Download,
-  Building2,
-  CheckCircle2,
   Printer,
-  Mail,
-  Sliders,
-  DollarSign,
-  ShieldCheck
+  Sliders
 } from 'lucide-react'
 import { useJobContext } from '../../context/JobContext'
 
@@ -31,7 +24,6 @@ export const ProformaQuotePage: React.FC = () => {
   const whitelabelFee = includeWhitelabel ? 25000 : 0
 
   const subtotal = basePlanFee + seatFee + aiFee + whitelabelFee
-  const gstRate = 0.18
   const cgst = subtotal * 0.09
   const sgst = subtotal * 0.09
   const total = subtotal + cgst + sgst

@@ -8,9 +8,7 @@ import {
   Phone,
   Upload,
   CheckCircle2,
-  ArrowRight,
-  ShieldCheck,
-  GraduationCap
+  ArrowRight
 } from 'lucide-react'
 import { useJobContext } from '../context/JobContext'
 

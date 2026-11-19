@@ -1,6 +1,8 @@
 import React, { useState } from 'react'
 import { Link, useNavigate } from 'react-router-dom'
-import { AlertTriangle, Gift, CheckCircle2, ArrowRight, ArrowLeft, HeartCrack, HelpCircle } from 'lucide-react'
+import {
+  AlertTriangle, Gift
+} from 'lucide-react'
 import { useJobContext } from '../../context/JobContext'
 
 export const CancellationFlowPage: React.FC = () => {

@@ -14,7 +14,7 @@ import { useJobContext } from '../../context/JobContext'
 
 export const QuickApplyModal: React.FC = () => {
   const { quickApplyJob, setQuickApplyJob, applyToJob, userProfile } = useJobContext()
-  const [selectedResume, setSelectedResume] = useState(userProfile.resumeName)
+  const [selectedResume] = useState(userProfile.resumeName)
   const [customFile, setCustomFile] = useState<string | null>(null)
   const [coverNote, setCoverNote] = useState('')
   const [isSubmitting, setIsSubmitting] = useState(false)

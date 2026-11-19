@@ -1,5 +1,7 @@
 import React, { useState } from 'react'
-import { Plug, ShieldCheck, CheckCircle2, Trash2, ExternalLink } from 'lucide-react'
+import {
+  ShieldCheck
+} from 'lucide-react'
 import { INITIAL_INTEGRATIONS } from '../../data/mockData'
 import { useJobContext } from '../../context/JobContext'
 

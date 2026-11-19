@@ -3,12 +3,7 @@ import {
   X,
   Eye,
   Type,
-  Volume2,
-  Sparkles,
-  Command,
-  Check,
   RotateCcw,
-  Sliders,
   Keyboard
 } from 'lucide-react'
 

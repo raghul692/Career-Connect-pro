@@ -1,27 +1,16 @@
-import React, { useState } from 'react'
-import { Link, useNavigate } from 'react-router-dom'
+import React from 'react'
+import { useNavigate } from 'react-router-dom'
 import {
   Sparkles,
   FileCheck2,
-  Send,
   Zap,
-  TrendingUp,
-  Star,
   CheckCircle2,
   ArrowRight,
-  ShieldCheck,
-  Award,
-  Users,
-  Eye,
-  Building2,
-  Clock
+  Award
 } from 'lucide-react'
-import { useJobContext } from '../context/JobContext'
 
 export const FastForwardServicesPage: React.FC = () => {
-  const { showNotification } = useJobContext()
   const navigate = useNavigate()
-  const [activePlan, setActivePlan] = useState<'3months' | '6months' | 'annual'>('6months')
 
   const services = [
     {

@@ -1,7 +1,6 @@
 import React from 'react'
 import { Link, useNavigate } from 'react-router-dom'
 import {
-  Sparkles,
   GraduationCap,
   Building2,
   ArrowRight,
@@ -13,8 +12,7 @@ import {
   Smartphone,
   CheckCircle,
   Briefcase,
-  TrendingUp,
-  Award
+  TrendingUp
 } from 'lucide-react'
 import { useJobContext } from '../context/JobContext'
 import { SearchBar } from '../components/common/SearchBar'
@@ -22,7 +20,7 @@ import { JobCard } from '../components/common/JobCard'
 import { CompanyCard } from '../components/common/CompanyCard'
 
 export const HomePage: React.FC = () => {
-  const { jobs, companies, contests, questions, setFilters } = useJobContext()
+  const { jobs, companies, questions, setFilters } = useJobContext()
   const navigate = useNavigate()
 
   const handleCategoryClick = (category: string) => {

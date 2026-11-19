@@ -2,17 +2,10 @@ import React, { useState } from 'react'
 import { Link } from 'react-router-dom'
 import {
   Sparkles,
-  Search,
-  CheckCircle2,
-  FileText,
-  Building2,
-  Users,
-  ArrowRight,
-  ShieldCheck,
-  Star,
-  ExternalLink,
-  ChevronRight
+  Star
 } from 'lucide-react'
+
+const SAMPLE_TIMESTAMP = '2026-11-18T10:30:00.000Z'
 
 export const ProductTourPage: React.FC = () => {
   const [activeStep, setActiveStep] = useState<number>(1)
@@ -273,7 +266,7 @@ export const ProductTourPage: React.FC = () => {
     "target_role": "Graduate Trainee Engineer"
   },
   "organization_id": "org-techm",
-  "timestamp": "${new Date().toISOString()}"
+  "timestamp": "${SAMPLE_TIMESTAMP}"
 }`}
                 </pre>
               </div>

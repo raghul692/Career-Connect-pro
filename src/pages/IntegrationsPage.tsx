@@ -4,11 +4,7 @@ import {
   Plug,
   Search,
   CheckCircle2,
-  ExternalLink,
-  Plus,
-  Sparkles,
   ArrowRight,
-  ShieldCheck,
   Star
 } from 'lucide-react'
 import { INITIAL_INTEGRATIONS } from '../data/mockData'

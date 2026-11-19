@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { Laptop, Smartphone, Globe, Shield, Trash2, CheckCircle2, AlertTriangle } from 'lucide-react'
+import { Laptop, Smartphone, Globe, Trash2, CheckCircle2 } from 'lucide-react'
 import { useJobContext } from '../../context/JobContext'
 
 interface Session {

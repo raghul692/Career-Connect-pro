@@ -1,6 +1,8 @@
 import React, { useState } from 'react'
 import { Link, useNavigate } from 'react-router-dom'
-import { Key, Shield, ArrowRight, CheckCircle2, Building2, HelpCircle } from 'lucide-react'
+import {
+  ArrowRight, CheckCircle2
+} from 'lucide-react'
 import { useJobContext } from '../../context/JobContext'
 
 export const SsoLoginPage: React.FC = () => {

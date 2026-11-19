@@ -1,6 +1,6 @@
 import React, { useState, useRef, useEffect } from 'react'
 import { useNavigate } from 'react-router-dom'
-import { Search, MapPin, Briefcase, ChevronDown, Sparkles, X } from 'lucide-react'
+import { Search, MapPin, Briefcase, ChevronDown, X } from 'lucide-react'
 import { useJobContext } from '../../context/JobContext'
 
 interface SearchBarProps {

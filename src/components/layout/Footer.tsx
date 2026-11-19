@@ -1,7 +1,6 @@
 import React, { useState } from 'react'
 import { Link } from 'react-router-dom'
 import {
-  Briefcase,
   ShieldCheck,
   Mail,
   CheckCircle2,
@@ -9,6 +8,8 @@ import {
   Heart
 } from 'lucide-react'
 import { BrandLogo } from '../common/BrandLogo'
+
+const CURRENT_YEAR = new Date().getFullYear()
 
 export const Footer: React.FC = () => {
   const [email, setEmail] = useState('')
@@ -178,7 +179,7 @@ export const Footer: React.FC = () => {
         {/* Bottom Bar: Copyright & Location */}
         <div className="mt-12 pt-6 border-t border-slate-800 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-slate-500">
           <div>
-            &copy; {new Date().getFullYear()} Career Connect Pro Pvt Ltd. All rights reserved.
+            &copy; {CURRENT_YEAR} Career Connect Pro Pvt Ltd. All rights reserved.
           </div>
           <div className="flex items-center gap-1 text-slate-400">
             <span>Crafted with</span>

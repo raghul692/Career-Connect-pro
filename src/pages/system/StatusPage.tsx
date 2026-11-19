@@ -1,6 +1,8 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-import { CheckCircle2, AlertTriangle, ArrowLeft, Shield, Clock, RefreshCw } from 'lucide-react'
+import {
+  CheckCircle2, ArrowLeft
+} from 'lucide-react'
 
 export const StatusPage: React.FC = () => {
   const components = [

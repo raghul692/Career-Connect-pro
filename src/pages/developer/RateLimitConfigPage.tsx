@@ -3,11 +3,8 @@ import { Link } from 'react-router-dom'
 import {
   Gauge,
   ShieldAlert,
-  Sliders,
   Play,
   RotateCcw,
-  CheckCircle2,
-  AlertTriangle,
   Activity,
   Server,
   Zap,

@@ -1,5 +1,7 @@
 import React, { useState } from 'react'
-import { Webhook, Plus, Send, CheckCircle2, Trash2, X, RefreshCw, AlertCircle } from 'lucide-react'
+import {
+  Webhook, Plus, Send, CheckCircle2, Trash2, X
+} from 'lucide-react'
 import { useJobContext } from '../../context/JobContext'
 
 export const WebhooksPage: React.FC = () => {

@@ -1,20 +1,13 @@
 import React, { useState } from 'react'
 import {
-  Cpu,
   Sparkles,
-  ShieldAlert,
   Sliders,
-  CheckCircle2,
-  AlertTriangle,
-  TrendingUp,
-  Clock,
-  Zap,
   BarChart2
 } from 'lucide-react'
 import { useJobContext } from '../../context/JobContext'
 
 export const AiCreditsPage: React.FC = () => {
-  const { aiScreeningUsage, updateAiBudgetCap, showNotification } = useJobContext()
+  const { aiScreeningUsage, updateAiBudgetCap } = useJobContext()
   const [budgetCap, setBudgetCap] = useState(aiScreeningUsage.hardBudgetCapInr)
   const [autoShutoff, setAutoShutoff] = useState(aiScreeningUsage.autoShutoffEnabled)
 

@@ -1,6 +1,6 @@
 import React from 'react'
 import { useParams, Link } from 'react-router-dom'
-import { Clock, Calendar, ChevronRight, ArrowLeft, Share2, BookOpen } from 'lucide-react'
+import { Clock, Calendar, ChevronRight, Share2 } from 'lucide-react'
 import { useJobContext } from '../context/JobContext'
 
 export const CareerArticleDetailPage: React.FC = () => {

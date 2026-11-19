@@ -1,5 +1,7 @@
 import React, { useState } from 'react'
-import { Trash2, RotateCcw, AlertTriangle, ShieldAlert, CheckCircle2 } from 'lucide-react'
+import {
+  Trash2, RotateCcw, AlertTriangle
+} from 'lucide-react'
 import { useJobContext } from '../../context/JobContext'
 
 interface TrashedItem {

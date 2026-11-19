@@ -2,12 +2,8 @@ import React, { useState } from 'react'
 import {
   ArrowRightLeft,
   ShieldAlert,
-  AlertTriangle,
   CheckCircle2,
   Lock,
-  Users,
-  CreditCard,
-  Key,
   Clock
 } from 'lucide-react'
 import { useJobContext } from '../../context/JobContext'

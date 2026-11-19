@@ -6,15 +6,12 @@ import {
   Clock,
   Copy,
   Plus,
-  RefreshCw,
-  ExternalLink,
-  Lock,
-  AlertCircle
+  RefreshCw
 } from 'lucide-react'
 import { useJobContext } from '../../context/JobContext'
 
 export const DomainVerificationPage: React.FC = () => {
-  const { domainRecords, verifyDomain, showNotification, addAuditLog } = useJobContext()
+  const { domainRecords, verifyDomain, showNotification } = useJobContext()
   const [isModalOpen, setIsModalOpen] = useState(false)
   const [newDomain, setNewDomain] = useState('')
   const [isChecking, setIsChecking] = useState<string | null>(null)
@@ -24,7 +21,7 @@ export const DomainVerificationPage: React.FC = () => {
     showNotification(`Copied ${label} to clipboard!`)
   }
 
-  const handleVerifyCheck = (id: string, domain: string) => {
+  const handleVerifyCheck = (id: string, _domain: string) => {
     setIsChecking(id)
     setTimeout(() => {
       verifyDomain(id)

@@ -1,17 +1,10 @@
 import React, { useState } from 'react'
 import {
-  GitFork,
-  Sparkles,
   Play,
   Plus,
-  CheckCircle2,
   ArrowDown,
-  ArrowRight,
   Sliders,
-  Clock,
-  Send,
-  Zap,
-  Power
+  Zap
 } from 'lucide-react'
 import { useJobContext } from '../../context/JobContext'
 

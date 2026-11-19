@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import { Link } from 'react-router-dom'
-import { Shield, Download, Trash2, CheckCircle2, AlertTriangle, X, Lock, Sliders, MailX, ChevronRight } from 'lucide-react'
+import { Download, Trash2, AlertTriangle, X, Sliders, MailX, ChevronRight } from 'lucide-react'
 import { useJobContext } from '../../context/JobContext'
 
 export const PrivacyDataPage: React.FC = () => {

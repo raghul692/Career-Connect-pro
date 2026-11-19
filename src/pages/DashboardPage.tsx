@@ -4,17 +4,10 @@ import {
   Briefcase,
   Bookmark,
   BellRing,
-  CheckCircle2,
-  Clock,
-  Building2,
   ChevronRight,
-  TrendingUp,
-  User,
   Eye,
-  FileCheck2,
   MapPin,
-  IndianRupee,
-  Calendar
+  IndianRupee
 } from 'lucide-react'
 import { useJobContext } from '../context/JobContext'
 import { JobCard } from '../components/common/JobCard'

@@ -4,14 +4,8 @@ import {
   Lock,
   ShieldCheck,
   CheckCircle2,
-  ExternalLink,
   ChevronRight,
-  Server,
-  FileCode2,
-  RefreshCw,
-  Key,
-  Globe,
-  Award
+  RefreshCw
 } from 'lucide-react'
 import { useJobContext } from '../../context/JobContext'
 

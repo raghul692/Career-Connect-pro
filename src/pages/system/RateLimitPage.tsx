@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react'
 import { Link } from 'react-router-dom'
-import { Clock, Zap, Home, Sparkles } from 'lucide-react'
+import { Clock, Sparkles } from 'lucide-react'
 
 export const RateLimitPage: React.FC = () => {
   const [secondsLeft, setSecondsLeft] = useState(30)

@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react'
+import React, { useState } from 'react'
 import { useNavigate } from 'react-router-dom'
 import {
   Search,
@@ -94,10 +94,6 @@ export const CommandPaletteModal: React.FC = () => {
   const [selectedIndex, setSelectedIndex] = useState(0)
   const navigate = useNavigate()
 
-  useEffect(() => {
-    setSelectedIndex(0)
-  }, [query])
-
   if (!isCommandPaletteOpen) return null
 
   const filteredCommands = COMMANDS.filter((cmd) =>
@@ -144,7 +140,10 @@ export const CommandPaletteModal: React.FC = () => {
             type="text"
             autoFocus
             value={query}
-            onChange={(e) => setQuery(e.target.value)}
+            onChange={(e) => {
+              setQuery(e.target.value)
+              setSelectedIndex(0)
+            }}
             placeholder="Type a command or search pages (e.g. 'API Keys', 'Pricing', 'Team')..."
             className="w-full text-sm sm:text-base text-slate-900 placeholder:text-slate-400 bg-transparent outline-none"
           />

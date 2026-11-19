@@ -1,11 +1,6 @@
 import React, { useState } from 'react'
 import {
   Radio,
-  AlertTriangle,
-  Info,
-  CheckCircle2,
-  X,
-  ExternalLink,
   Send,
   Eye,
   Trash2

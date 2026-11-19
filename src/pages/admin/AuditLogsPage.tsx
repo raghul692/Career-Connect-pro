@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { ShieldAlert, Search, Filter, Download, Code2, ChevronDown, ChevronRight, User } from 'lucide-react'
+import { Search, Download, ChevronRight } from 'lucide-react'
 import { useJobContext } from '../../context/JobContext'
 
 export const AuditLogsPage: React.FC = () => {

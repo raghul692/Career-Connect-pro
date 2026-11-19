@@ -2,16 +2,12 @@ import React, { useState } from 'react'
 import { Link } from 'react-router-dom'
 import {
   DollarSign,
-  TrendingUp,
   Calculator,
   Building2,
   ChevronRight,
   Info
 } from 'lucide-react'
-import { useJobContext } from '../context/JobContext'
-
 export const SalariesPage: React.FC = () => {
-  const { companies } = useJobContext()
   const [annualCtc, setAnnualCtc] = useState<number>(800000)
 
   // In-hand calculation logic (standard Indian CTC breakdown)

@@ -1,6 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-import { Shield, Lock, ChevronRight, FileText } from 'lucide-react'
+import { Lock, ChevronRight } from 'lucide-react'
 
 export const PrivacyPage: React.FC = () => {
   return (

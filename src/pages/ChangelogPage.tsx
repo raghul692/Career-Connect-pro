@@ -1,5 +1,5 @@
 import React from 'react'
-import { Sparkles, Tag, Calendar, CheckCircle2, ArrowRight } from 'lucide-react'
+import { Sparkles, Calendar, CheckCircle2 } from 'lucide-react'
 
 export const ChangelogPage: React.FC = () => {
   const releases = [

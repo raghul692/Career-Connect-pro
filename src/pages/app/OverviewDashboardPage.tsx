@@ -7,18 +7,12 @@ import {
   Clock,
   Sparkles,
   ArrowUpRight,
-  ArrowRight,
-  ShieldCheck,
-  CheckCircle2,
-  FileText,
-  BarChart3,
-  Building2,
-  AlertCircle
+  Building2
 } from 'lucide-react'
 import { useJobContext } from '../../context/JobContext'
 
 export const OverviewDashboardPage: React.FC = () => {
-  const { activeOrg, applications, jobs, auditLogs, usageMeters } = useJobContext()
+  const { activeOrg, jobs, auditLogs, usageMeters } = useJobContext()
 
   const stats = [
     { label: 'Total Candidates Sourced', value: '1,420', change: '+18% this month', icon: Users, color: 'text-indigo-600', bg: 'bg-indigo-50' },

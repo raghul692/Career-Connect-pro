@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import { Link } from 'react-router-dom'
-import { Mail, ArrowLeft, CheckCircle2, Briefcase } from 'lucide-react'
+import { Mail, ArrowLeft, CheckCircle2 } from 'lucide-react'
 
 export const ForgotPasswordPage: React.FC = () => {
   const [email, setEmail] = useState('')

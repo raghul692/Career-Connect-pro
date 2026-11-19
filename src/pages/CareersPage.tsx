@@ -1,15 +1,11 @@
 import React, { useState } from 'react'
-import { Link } from 'react-router-dom'
 import {
-  Briefcase,
   MapPin,
   Clock,
   Sparkles,
-  ArrowRight,
   Heart,
   Coffee,
   Laptop,
-  CheckCircle2,
   X
 } from 'lucide-react'
 import { useJobContext } from '../context/JobContext'

@@ -1,5 +1,4 @@
 import React, { createContext, useContext, useState, useEffect } from 'react'
-import confetti from 'canvas-confetti'
 import {
   Job,
   Company,
@@ -158,6 +157,10 @@ const defaultFilters: FilterState = {
 
 const JobContext = createContext<JobContextType | undefined>(undefined)
 
+const generateJobId = () => `job-${Date.now()}`
+const generateUserId = () => `usr-${Date.now()}`
+const generateAppId = () => `app-${Date.now()}`
+
 export const JobProvider: React.FC<{ children: React.ReactNode }> = ({ children }) => {
   const [jobs, setJobs] = useState<Job[]>(() => {
     const saved = localStorage.getItem('ccp_jobs')
@@ -191,7 +194,7 @@ export const JobProvider: React.FC<{ children: React.ReactNode }> = ({ children 
   const [teamMembers, setTeamMembers] = useState<TeamMember[]>(INITIAL_TEAM_MEMBERS)
   const [auditLogs, setAuditLogs] = useState<AuditLogEntry[]>(INITIAL_AUDIT_LOGS)
   const [invoices] = useState<Invoice[]>(INITIAL_INVOICES)
-  const [usageMeters, setUsageMeters] = useState<UsageMeter[]>(INITIAL_USAGE_METERS)
+  const [usageMeters] = useState<UsageMeter[]>(INITIAL_USAGE_METERS)
   const [apiKeys, setApiKeys] = useState<ApiKey[]>(INITIAL_API_KEYS)
   const [webhooks, setWebhooks] = useState<WebhookEndpoint[]>(INITIAL_WEBHOOKS)
   const [notifications, setNotifications] = useState<NotificationItem[]>(INITIAL_NOTIFICATIONS)
@@ -205,7 +208,7 @@ export const JobProvider: React.FC<{ children: React.ReactNode }> = ({ children 
   const [domainRecords, setDomainRecords] = useState<DomainVerificationRecord[]>(INITIAL_DOMAIN_RECORDS)
   const [ipRules, setIpRules] = useState<IpAllowlistRule[]>(INITIAL_IP_RULES)
   const [retentionPolicies, setRetentionPolicies] = useState<DataRetentionPolicy[]>(INITIAL_RETENTION_POLICIES)
-  const [superAdminTenants, setSuperAdminTenants] = useState<SuperAdminTenant[]>(INITIAL_SUPERADMIN_TENANTS)
+  const [superAdminTenants] = useState<SuperAdminTenant[]>(INITIAL_SUPERADMIN_TENANTS)
   const [aiScreeningUsage, setAiScreeningUsage] = useState<AiScreeningUsage>(INITIAL_AI_SCREENING_USAGE)
   const [hiringWorkflows, setHiringWorkflows] = useState<HiringWorkflow[]>(INITIAL_HIRING_WORKFLOWS)
   const [whiteLabelConfig, setWhiteLabelConfig] = useState<WhiteLabelSettings>(INITIAL_WHITELABEL_CONFIG)
@@ -272,14 +275,14 @@ export const JobProvider: React.FC<{ children: React.ReactNode }> = ({ children 
 
   const hasApplied = (jobId: string) => applications.some((app) => app.jobId === jobId)
 
-  const applyToJob = (job: Job, resumeName?: string, _coverNote?: string) => {
+  const applyToJob = (job: Job, _resumeName?: string, _coverNote?: string) => {
     if (hasApplied(job.id)) {
       showNotification('You have already submitted an application for this role!')
       return
     }
 
     const newApp: Application = {
-      id: `app-${Date.now()}`,
+      id: generateAppId(),
       jobId: job.id,
       jobTitle: job.title,
       company: job.company,
@@ -297,11 +300,14 @@ export const JobProvider: React.FC<{ children: React.ReactNode }> = ({ children 
       prev.map((j) => (j.id === job.id ? { ...j, applicants: (j.applicants || 0) + 1 } : j))
     )
 
-    // Trigger celebratory confetti
-    confetti({
-      particleCount: 80,
-      spread: 70,
-      origin: { y: 0.6 }
+    // Trigger celebratory confetti dynamically on demand
+    import('canvas-confetti').then((mod) => {
+      const triggerConfetti = mod.default || mod
+      triggerConfetti({
+        particleCount: 80,
+        spread: 70,
+        origin: { y: 0.6 }
+      })
     })
 
     showNotification(`Application submitted successfully to ${job.company}!`)
@@ -315,7 +321,7 @@ export const JobProvider: React.FC<{ children: React.ReactNode }> = ({ children 
   const postNewJob = (jobData: Omit<Job, 'id' | 'postedDaysAgo' | 'applicants'>) => {
     const newJob: Job = {
       ...jobData,
-      id: `job-${Date.now()}`,
+      id: generateJobId(),
       postedDaysAgo: 0,
       applicants: 1
     }
@@ -327,7 +333,7 @@ export const JobProvider: React.FC<{ children: React.ReactNode }> = ({ children 
 
   const inviteTeamMember = (name: string, email: string, role: EnterpriseRole) => {
     const newMember: TeamMember = {
-      id: `usr-${Date.now()}`,
+      id: generateUserId(),
       name,
       email,
       role,
@@ -691,6 +697,7 @@ export const JobProvider: React.FC<{ children: React.ReactNode }> = ({ children 
   )
 }
 
+// oxlint-disable-next-line react/only-export-components
 export const useJobContext = () => {
   const ctx = useContext(JobContext)
   if (!ctx) {

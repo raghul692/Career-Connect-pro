@@ -1,5 +1,5 @@
 import React from 'react'
-import { useParams, Link, useNavigate } from 'react-router-dom'
+import { useParams, Link } from 'react-router-dom'
 import {
   MapPin,
   Briefcase,
@@ -14,7 +14,6 @@ import {
   Users,
   ShieldCheck,
   ChevronRight,
-  ArrowLeft,
   GraduationCap
 } from 'lucide-react'
 import { useJobContext } from '../context/JobContext'
@@ -23,7 +22,6 @@ import { JobCard } from '../components/common/JobCard'
 export const JobDetailPage: React.FC = () => {
   const { id } = useParams<{ id: string }>()
   const { jobs, toggleSaveJob, isJobSaved, setQuickApplyJob, hasApplied, showNotification } = useJobContext()
-  const navigate = useNavigate()
 
   const job = jobs.find((j) => j.id === id) || jobs[0]
   const saved = isJobSaved(job.id)

@@ -1,6 +1,8 @@
 import React, { useState } from 'react'
-import { Code2, Copy, Check, Terminal, ExternalLink, ArrowRight } from 'lucide-react'
+import { Copy, Check } from 'lucide-react'
 import { useJobContext } from '../../context/JobContext'
+
+const SAMPLE_TIMESTAMP = '2026-11-18T10:30:00.000Z'
 
 interface Endpoint {
   id: string
@@ -80,7 +82,7 @@ export const ApiDocsPage: React.FC = () => {
   "success": true,
   "application_id": "app-104",
   "status": "Shortlisted",
-  "timestamp": "${new Date().toISOString()}"
+  "timestamp": "${SAMPLE_TIMESTAMP}"
 }`
     }
   ]

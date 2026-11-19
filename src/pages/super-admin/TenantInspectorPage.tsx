@@ -2,16 +2,8 @@ import React, { useState } from 'react'
 import { useNavigate } from 'react-router-dom'
 import {
   Crown,
-  Building2,
-  Users,
   Search,
-  ExternalLink,
-  ShieldAlert,
-  ArrowRight,
   TrendingUp,
-  DollarSign,
-  AlertCircle,
-  CheckCircle2,
   UserCheck
 } from 'lucide-react'
 import { useJobContext } from '../../context/JobContext'

@@ -9,8 +9,6 @@ import {
   Calendar,
   Users,
   Award,
-  Sparkles,
-  ArrowRight,
   Clock,
   ChevronRight
 } from 'lucide-react'

@@ -1,5 +1,7 @@
 import React, { useState } from 'react'
-import { BarChart3, Download, Calendar, Filter, TrendingUp, Users, ArrowUpRight, CheckCircle2 } from 'lucide-react'
+import {
+  Download
+} from 'lucide-react'
 import { useJobContext } from '../../context/JobContext'
 
 export const ReportsPage: React.FC = () => {

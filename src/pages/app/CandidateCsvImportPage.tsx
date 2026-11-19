@@ -1,13 +1,10 @@
 import React, { useState } from 'react'
 import {
-  UploadCloud,
   FileSpreadsheet,
   CheckCircle2,
   AlertCircle,
   ArrowRight,
   Download,
-  Trash2,
-  Sparkles,
   RefreshCw,
   SlidersHorizontal,
   Table

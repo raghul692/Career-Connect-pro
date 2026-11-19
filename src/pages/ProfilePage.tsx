@@ -1,7 +1,6 @@
 import React, { useState } from 'react'
 import { Link } from 'react-router-dom'
 import {
-  User,
   Mail,
   Phone,
   MapPin,
@@ -13,7 +12,6 @@ import {
   Plus,
   X,
   Save,
-  CheckCircle2,
   ChevronRight
 } from 'lucide-react'
 import { useJobContext } from '../context/JobContext'

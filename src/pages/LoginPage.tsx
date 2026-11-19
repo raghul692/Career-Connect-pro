@@ -5,7 +5,6 @@ import {
   Mail,
   Lock,
   ArrowRight,
-  ShieldCheck,
   CheckCircle2
 } from 'lucide-react'
 import { useJobContext } from '../context/JobContext'

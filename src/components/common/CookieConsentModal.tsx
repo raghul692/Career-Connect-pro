@@ -1,21 +1,17 @@
-import React, { useState, useEffect } from 'react'
+import React, { useState } from 'react'
 import { ShieldCheck, Check, Settings2, X } from 'lucide-react'
 
 export const CookieConsentModal: React.FC = () => {
-  const [showBanner, setShowBanner] = useState(false)
+  const [showBanner, setShowBanner] = useState<boolean>(() => {
+    if (typeof window === 'undefined') return false
+    return !localStorage.getItem('ccp_cookie_consent')
+  })
   const [showPreferences, setShowPreferences] = useState(false)
   const [preferences, setPreferences] = useState({
     essential: true, // Always required
     analytics: true,
     marketing: false
   })
-
-  useEffect(() => {
-    const consent = localStorage.getItem('ccp_cookie_consent')
-    if (!consent) {
-      setShowBanner(true)
-    }
-  }, [])
 
   const handleAcceptAll = () => {
     localStorage.setItem('ccp_cookie_consent', JSON.stringify({ essential: true, analytics: true, marketing: true }))

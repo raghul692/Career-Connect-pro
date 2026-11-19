@@ -1,5 +1,7 @@
 import React, { useState } from 'react'
-import { Bell, CheckCircle2, Trash2, Filter, AlertCircle, Info, Sparkles, MessageSquare } from 'lucide-react'
+import {
+  Bell
+} from 'lucide-react'
 import { useJobContext } from '../../context/JobContext'
 
 export const NotificationsPage: React.FC = () => {

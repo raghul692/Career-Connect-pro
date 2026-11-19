@@ -1,15 +1,10 @@
 import React, { useState } from 'react'
 import {
   Palette,
-  Globe,
   Sliders,
   Plus,
   Trash2,
-  CheckCircle2,
-  Sparkles,
-  Eye,
-  ShieldCheck,
-  Building2
+  ShieldCheck
 } from 'lucide-react'
 import { useJobContext } from '../../context/JobContext'
 

@@ -1,21 +1,14 @@
-import React, { useState } from 'react'
+import React from 'react'
 import {
-  Clock,
-  ShieldCheck,
-  AlertTriangle,
   Trash2,
   FileCheck2,
-  RefreshCw,
   Scale,
-  Calendar,
-  CheckCircle2,
-  Lock
+  CheckCircle2
 } from 'lucide-react'
 import { useJobContext } from '../../context/JobContext'
 
 export const DataRetentionPage: React.FC = () => {
   const { retentionPolicies, runRetentionPurge, openSudoModal, showNotification } = useJobContext()
-  const [selectedPolicyId, setSelectedPolicyId] = useState<string | null>(null)
 
   const handleTriggerPurge = (id: string, category: string, count: number) => {
     if (count === 0) {

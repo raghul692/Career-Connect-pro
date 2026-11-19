@@ -3,12 +3,7 @@ import { Link } from 'react-router-dom'
 import {
   Heart,
   Star,
-  Quote,
-  TrendingUp,
-  CheckCircle2,
-  ArrowRight,
-  Sparkles,
-  Building2
+  ArrowRight
 } from 'lucide-react'
 import { INITIAL_CASE_STUDIES } from '../data/mockData'
 

@@ -2,13 +2,9 @@ import React, { useState } from 'react'
 import { Link } from 'react-router-dom'
 import {
   BarChart3,
-  ShieldCheck,
   CheckCircle2,
   Lock,
-  ChevronRight,
-  Sliders,
-  Download,
-  AlertCircle
+  ChevronRight
 } from 'lucide-react'
 import { useJobContext } from '../../context/JobContext'
 

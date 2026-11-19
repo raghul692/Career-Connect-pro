@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react'
 import { Link, useNavigate } from 'react-router-dom'
-import { Mail, CheckCircle2, ArrowRight, RefreshCw, Briefcase } from 'lucide-react'
+import { Mail, ArrowRight, RefreshCw } from 'lucide-react'
 import { useJobContext } from '../../context/JobContext'
 
 export const MagicLinkSentPage: React.FC = () => {

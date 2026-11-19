@@ -1,12 +1,8 @@
 import React, { useState } from 'react'
 import { Link } from 'react-router-dom'
 import {
-  Building2,
-  Users,
-  ShieldCheck,
   Calendar,
   CheckCircle2,
-  Sparkles,
   ArrowRight,
   Phone,
   Mail,

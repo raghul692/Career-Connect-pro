@@ -1,10 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import {
-  Briefcase,
-  Users,
-  Building2,
-  GraduationCap,
   Award,
   ShieldCheck,
   ChevronRight,

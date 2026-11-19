@@ -1,10 +1,10 @@
 import React, { useState } from 'react'
 import { Link } from 'react-router-dom'
-import { AlertCircle, RefreshCw, Home, HelpCircle } from 'lucide-react'
+import { AlertCircle, RefreshCw } from 'lucide-react'
 
 export const ServerErrorPage: React.FC = () => {
   const [retrying, setRetrying] = useState(false)
-  const traceId = `trc_${Math.random().toString(36).substring(2, 10)}${Math.random().toString(36).substring(2, 10)}`
+  const [traceId] = useState(() => `trc_${Math.random().toString(36).substring(2, 10)}${Math.random().toString(36).substring(2, 10)}`)
 
   const handleRetry = () => {
     setRetrying(true)

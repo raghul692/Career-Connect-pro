@@ -52,3 +52,17 @@ export const SkeletonJobCard: React.FC = () => (
   </div>
 )
 
+export const RouteFallbackLoader: React.FC = () => (
+  <div
+    className="min-h-[55vh] flex flex-col items-center justify-center p-8 space-y-4 animate-pulse"
+    role="status"
+    aria-label="Loading page content"
+  >
+    <div className="w-10 h-10 rounded-xl bg-blue-600/10 border border-blue-600/20 flex items-center justify-center">
+      <div className="w-4 h-4 rounded-full border-2 border-blue-600 border-t-transparent animate-spin" />
+    </div>
+    <div className="h-3 w-32 bg-slate-200 rounded-full" />
+    <span className="sr-only">Loading page content...</span>
+  </div>
+)
+

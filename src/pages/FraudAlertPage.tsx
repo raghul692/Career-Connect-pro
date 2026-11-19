@@ -2,13 +2,10 @@ import React, { useState } from 'react'
 import { Link } from 'react-router-dom'
 import {
   ShieldAlert,
-  ShieldCheck,
   AlertTriangle,
   Send,
   CheckCircle2,
-  ChevronRight,
-  Phone,
-  Mail
+  ChevronRight
 } from 'lucide-react'
 import { useJobContext } from '../context/JobContext'
 

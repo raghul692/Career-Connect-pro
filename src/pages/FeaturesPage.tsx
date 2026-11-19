@@ -7,9 +7,7 @@ import {
   Layers,
   ArrowRight,
   CheckCircle2,
-  Building2,
   GraduationCap,
-  Users,
   Code2,
   ChevronRight
 } from 'lucide-react'

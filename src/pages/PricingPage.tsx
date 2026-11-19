@@ -2,14 +2,8 @@ import React, { useState } from 'react'
 import { Link } from 'react-router-dom'
 import {
   Check,
-  Zap,
-  Building2,
-  ShieldCheck,
   ChevronRight,
-  HelpCircle,
   Sparkles,
-  ArrowRight,
-  Users,
   X
 } from 'lucide-react'
 import { useJobContext } from '../context/JobContext'

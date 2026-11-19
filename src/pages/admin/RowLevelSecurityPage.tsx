@@ -9,10 +9,7 @@ import {
   AlertTriangle,
   Play,
   RotateCcw,
-  Layers,
-  ChevronRight,
-  Eye,
-  Key
+  ChevronRight
 } from 'lucide-react'
 import { useJobContext } from '../../context/JobContext'
 

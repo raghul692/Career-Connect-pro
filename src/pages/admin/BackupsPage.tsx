@@ -2,18 +2,11 @@ import React, { useState } from 'react'
 import { Link } from 'react-router-dom'
 import {
   Database,
-  CloudDownload,
   RotateCcw,
   CheckCircle2,
   Clock,
   ShieldCheck,
-  AlertTriangle,
-  Play,
-  HardDrive,
-  Calendar,
-  Layers,
-  ChevronRight,
-  Server
+  ChevronRight
 } from 'lucide-react'
 import { useJobContext } from '../../context/JobContext'
 

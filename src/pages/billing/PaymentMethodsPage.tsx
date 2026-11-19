@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { CreditCard, Plus, CheckCircle2, Trash2, Building, ShieldCheck, X } from 'lucide-react'
+import { CreditCard, Plus, ShieldCheck, X } from 'lucide-react'
 import { useJobContext } from '../../context/JobContext'
 
 export const PaymentMethodsPage: React.FC = () => {

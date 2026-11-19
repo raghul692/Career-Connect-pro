@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import { Link, useNavigate } from 'react-router-dom'
-import { Lock, CheckCircle2, XCircle, ArrowRight, ShieldCheck } from 'lucide-react'
+import { Lock, CheckCircle2, XCircle, ArrowRight } from 'lucide-react'
 import { useJobContext } from '../../context/JobContext'
 
 export const ResetPasswordPage: React.FC = () => {

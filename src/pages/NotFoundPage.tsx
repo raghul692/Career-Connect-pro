@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import { Link, useNavigate } from 'react-router-dom'
-import { Search, Home, Briefcase, Building2, Map, ArrowLeft } from 'lucide-react'
+import { Home, Briefcase, Building2, Map } from 'lucide-react'
 
 export const NotFoundPage: React.FC = () => {
   const [search, setSearch] = useState('')
