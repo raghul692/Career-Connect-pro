@@ -40,3 +40,6 @@ Thumbs.db
 # Vite & Bundler Caches
 .vite
 .cache
+
+.vercel
+.env*
